@@ -1,0 +1,58 @@
+{
+  "name": "tez-cli",
+  "version": "0.0.0",
+  "author": "Riaz Laskar @riazXrazor",
+  "bin": {
+    "tez-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/riazXrazor/tez-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.13.3",
+    "@oclif/plugin-help": "^2.2.1",
+    "cli-ux": "^5.3.2",
+    "degit": "^2.1.4",
+    "fs-extra": "^8.1.0",
+    "shelljs.exec": "^1.1.8",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^10.14.18",
+    "globby": "^10.0.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/riazXrazor/tez-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "tez-cli",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "riazXrazor/tez-cli",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
