@@ -5,9 +5,6 @@ tez-cli
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
@@ -36,16 +33,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`tez-cli help [COMMAND]`](#tez-cli-help-command)
-* [`tez-cli init [FILE]`](#tez-cli-init-file)
+* [`tez-cli help`](#tez-cli-help-command)
+* [`tez-cli init [PROJECT_NAME]`](#tez-cli-init-file)
 
-## `tez-cli help [COMMAND]`
+## `tez-cli help`
 
 display help for tez-cli
 
 ```
 USAGE
-  $ tez-cli help [COMMAND]
+  $ tez-cli help
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -54,15 +51,13 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src\commands\help.ts)_
+## `tez-cli init [PROJECT_NAME]`
 
-## `tez-cli init [FILE]`
-
-describe the command here
+create a tez blank project
 
 ```
 USAGE
-  $ tez-cli init [FILE]
+  $ tez-cli init [PROJECT_NAME]
 
 OPTIONS
   -h, --help  show CLI help
@@ -71,7 +66,7 @@ EXAMPLE
   $ tez-cli init [PROJECT_NAME]
 ```
 
-_See code: [src\commands\init.ts](https://github.com/riazXrazor/tez-cli/blob/v0.0.2/src\commands\init.ts)_
+
 <!-- commandsstop -->
 * [`tez-cli help`](#tez-cli-help-command)
 * [`tez-cli init [PROJECT_NAME]`](#tez-cli-init-file)

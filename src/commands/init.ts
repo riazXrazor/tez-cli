@@ -5,7 +5,7 @@ import * as exec from 'shelljs.exec'
 // @ts-ignore
 import * as degit from 'degit'
 export default class Init extends Command {
-  static description = 'describe the command here'
+  static description = 'create a tez blank project'
 
   static examples = [
     `$ tez-cli init [PROJECT_NAME]`,
