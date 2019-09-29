@@ -12,7 +12,7 @@ $ npm install -g tez-cli
 $ tez-cli COMMAND
 running command...
 $ tez-cli (-v|--version|version)
-tez-cli/0.0.0 win32-x64 node-v10.15.0
+tez-cli/0.0.1 win32-x64 node-v12.11.0
 $ tez-cli --help [COMMAND]
 USAGE
   $ tez-cli COMMAND
@@ -21,26 +21,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`tez-cli init [PROJECT_NAME]`]
-
-## `tez-cli init [PROJECT_NAME]`
-
-create a tez project 
-
-```
-USAGE
-  $ tez-cli init [PROJECT_NAME]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-
-EXAMPLE
-  $ tez-cli init myproject
-    creating project "myproject"... done
-    installing dependencies... done
-    Finishing setup... done
-```
+* [`tez-cli help [COMMAND]`](#tez-cli-help-command)
+* [`tez-cli init [FILE]`](#tez-cli-init-file)
 
 ## `tez-cli help [COMMAND]`
 
@@ -56,4 +38,23 @@ ARGUMENTS
 OPTIONS
   --all  see all commands in CLI
 ```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src\commands\help.ts)_
+
+## `tez-cli init [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ tez-cli init [FILE]
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ tez-cli init [PROJECT_NAME]
+```
+
+_See code: [src\commands\init.ts](https://github.com/riazXrazor/tez-cli/blob/v0.0.1/src\commands\init.ts)_
 <!-- commandsstop -->

@@ -1,6 +1,6 @@
 {
   "name": "tez-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Riaz Laskar @riazXrazor",
   "bin": {
     "tez-cli": "./bin/run"
