@@ -16,7 +16,7 @@ export default class Init extends Command {
     help: flags.help({char: 'h'}),
   }
 
-  static args = [{name: 'file'}]
+  static args = [{name: 'project_name'}]
 
   async run() {
     const {argv} = this.parse(Init)
@@ -25,7 +25,7 @@ export default class Init extends Command {
     cli.action.start(`creating project "${projectName}"`)
 
 
-    const emitter = degit('riazXrazor/ts-api-server-v2', {
+    const emitter = degit('riazXrazor/tez', {
         cache: false,
         force: true,
         verbose: false,
