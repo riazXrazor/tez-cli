@@ -14,7 +14,7 @@ $ npm install -g tez-cli
 $ tez-cli COMMAND
 running command...
 $ tez-cli (-v|--version|version)
-tez-cli/0.0.3 win32-x64 node-v12.11.0
+tez-cli/0.0.4 win32-x64 node-v10.16.3
 $ tez-cli --help [COMMAND]
 USAGE
   $ tez-cli COMMAND
@@ -61,7 +61,7 @@ EXAMPLE
   $ tez-cli init [PROJECT_NAME]
 ```
 
-_See code: [src\commands\init.ts](https://github.com/riazXrazor/tez-cli/blob/v0.0.3/src\commands\init.ts)_
+_See code: [src\commands\init.ts](https://github.com/riazXrazor/tez-cli/blob/v0.0.4/src\commands\init.ts)_
 <!-- commandsstop -->
 
 <!-- commandsstop -->
